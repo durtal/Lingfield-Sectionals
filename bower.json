@@ -1,0 +1,26 @@
+{
+  "name": "Lingfield-Sectionals",
+  "version": "1.0.0",
+  "authors": [
+    "Tom Heslop <t_heslop@hotmail.co.uk>"
+  ],
+  "description": "simple single page web app to display Turftrax Sectionals for Lingfield Park",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootswatch-dist": "3.3.0-simplex",
+    "d3": "~3.5.5",
+    "angularjs": "~1.3.14",
+    "angular-ui-router": "~0.2.13",
+    "underscore": "~1.8.2",
+    "font-awesome": "~4.3.0"
+  },
+  "appPath": "app"
+}
