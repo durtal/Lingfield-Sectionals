@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<title>Lingfield Sectionals</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<!-- build:css(.) styles/vendor.css -->
+		<!-- bower:css -->
+		<link rel="stylesheet" href="bower_components/bootswatch-dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+		<!-- endbower -->
+		<!-- endbuild -->
+		<!-- build:css(.tmp) styles/main.css -->
+		<link rel="stylesheet" href="styles/main.css">
+
+		<!-- emdbuild -->
+	</head>
+	<body ng-app="LingfieldApp">
+		<!--[if lt IE 7]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		<div class="container" id="top">
+			<div class="row">
+				<div class="container">
+					<h1>Lingfield Park Dashboard</h1>
+					<h5 class="text-muted">All data comes courtesy of <a href="http://www.turftrax.co.uk/">Turftrax</a>.  If you like what you see, or if you don't, feedback is welcomed.  If you would like to contribute and make this better, the code is all available on github, find it <a href="github.com/durtal/Lingfield-Sectionals">here</a>.</h5>
+				</div>
+			</div>
+
+			<div class="header">
+				<div class="navbar navbar-default">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<a ui-sref="home" class="navbar-brand">HOME</a>
+							<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#nav-menu">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="navbar-collapse collapse" id="nav-menu">
+							<ul class="nav navbar-nav navbar-left">
+								<li ui-sref-active="active">
+									<a ui-sref="parCoords">Parallel Coords</a>
+								</li>
+								<li ui-sref-active="active">
+									<a ui-sref="finSpdCalc">FinSpd Calc</a>
+								</li>
+								<li ui-sref-active="active">
+									<a ui-sref="sandbox">Sandbox</a>
+								</li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li ui-sref-active="active">
+									<a ui-sref="about">About</a>
+								</li>
+								<li ui-sref-active="active">
+									<a href="http://twitter.com/_RcappeR" target="_new">
+										<i class="fa fa-twitter-square fa-lg"></i>
+									</a>
+								</li>
+								<li ui-sref-active="active">
+									<a href="http://www.github.com/durtal" target="_new">
+										<i class="fa fa-github-square fa-lg"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div ui-view>
+
+			</div>
+
+
+		</div>
+		<div class="container">
+
+			<div class="footer">
+				<p class="pull-right">Styled by <a href="http://bootswatch.com/">Bootswatch</a></p>
+			</div>
+
+		</div>
+
+
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-51585631-1', 'durtal.github.io');
+		ga('send', 'pageview');
+		</script>
+
+		<!-- build:js(.) scripts/oldieshim.js -->
+		<!--[if lt IE 9]>
+		<script src="bower_components/es5-shim/es5-shim.js"></script>
+		<script src="bower_components/json3/lib/json3.js"></script>
+		<![endif]-->
+		<!-- endbuild -->
+
+		<!-- build:js(.) scripts/vendor.js -->
+		<!-- bower:js -->
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="bower_components/bootswatch-dist/js/bootstrap.js"></script>
+		<script src="bower_components/d3/d3.js"></script>
+		<script src="bower_components/angularjs/angular.js"></script>
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+		<script src="bower_components/underscore/underscore.js"></script>
+		<!-- endbower -->
+		<!-- endbuild -->
+		<!-- build:js({.tmp,app}) scripts/scripts.js -->
+		<script src="scripts/app.js"></script>
+		<script src="scripts/controllers/SandboxCtrl.js"></script>
+		<script src="scripts/controllers/FinSpdCtrl.js"></script>
+		<!-- endbuild -->
+	</body>
+</html>
